@@ -5,5 +5,5 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World
-        run: echo "Hello, World!"
+      - name: test
+        run: echo "${{ secrets.MY_SECRET }}"
